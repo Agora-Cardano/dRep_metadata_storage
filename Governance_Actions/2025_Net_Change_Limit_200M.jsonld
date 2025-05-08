@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Como dRep, voto NÃO na ação de governança para definição do NCL em 200M ADA. Apoio o NCL atual de 350M e aceitaria 250M-300M, mas só com  fatores condicionantes:\n\n1 Limite por entidade\n\nPara evitar o monopólio da IOG e garantir equilíbrio na alocação de recursos para a comunidade.\n(ex.: 50% do NCL total vigente)\n\n2 Limite por proposta\n\nPara evitar agrupamento de trabalhos diferentes dentro de uma única proposta (a.k.a bundling)\n\n(Ex.: Orçamento da proposta solicitado pela Entidade, Grupo ou Indivíduo < 10% do NCL total vigente) Isso reduziria a quantia máxima por proposta e desistimula bundling.\n\nPorém, tais fatores condicionantes poderiam ser considerados inconstitucionais, é uma área cinzenta aparentemente, por isso também estou sendo leniente a um orçamento maior em 2025.\n\nPor que rejeitar 200M ADA?\n\nUm NCL de 200M ADA sufocaria a comunidade, direcionando quase todo orçamento do tesouro  disponível em 2025 para a IOG (+190M ADA pedidos para Core Dev, Catalyst e Research).\n\nA IOG se mostrou irredutível a revisar seu orçamento, e a maioria dos dReps mesmo assim sinalizaram apoio, perpetuando a centralização e ignorando as necessidades do ecossistema de descentralização no desenvolvimento do core.\n\nO orçamento do Project Catalyst deve cair de 150M para 60M ADA/ano, impactando projetos essenciais e centenas de contribuidores que dependem desses fundos. Um NCL de 200M pioraria isso, limitando dApps, inovações e adoção. O NCL de 350M, embora não ideal sem limites por entidade, dá mais espaço para a comunidade crescer em 2025.\n\nPreocupações:  \n\nMonopólio:\n\nIOG domina (+90% dos pedidos). Um limite percentual por entidade é crucial para descentralizar recursos e apoiar projetos diversos.  \n\nTransparência:\n\nEntidades fundadoras (IOG, Emurgo, Cardano Foundation) devem divulgar gastos, reservas e fornecer dados financeiros mais transparentes para que a comunidade avalie se estão usando suas próprias reservas de maneira apropriada antes de acessarem o tesouro, que pertence a todos.\n\nConflitos:\n\nTodos os dReps têm conflito de interesses em algum nível. Quem apoia NCL maior pode buscar recursos para projetos pessoais; quem apoia NCL menor teme que quedas no preço de ADA desvalorizem os próprios investimentos. Iniciativas privadas, como parcerias com VCs, reduziriam a dependência do tesouro e esses conflitos.  \n\nTransição Lenta:\n\nNão há modelo claro para transferir o desenvolvimento da IOG à comunidade, o que perpetua a dependência e atrasa a descentralização.\n\nTesouro a Longo Prazo:\n\nA sustentabilidade do tesouro é crucial, mas não cabe nesta ação pontual de 2025, que já deveria ter sido resolvida. O foco agora é o orçamento imediato; a sustentabilidade deve ser discutida em outra ação de governança.\n\nPossiveis Soluções:  \n\n- Estabelecer um limite por entidade (50%) para evitar monopólios e garantir justiça na alocação de recursos do tesouro.\n\n- Implementar contratos de vesting para vendas de ADA oriundas do tesouro, minimizando pressão vendedora e protegendo o preço.  \n\n- Financiar simulações de impacto no preço do ADA para embasar decisões futuras.  \n\n- Exigir transparência das entidades fundadoras sobre gastos e reservas antes delas requisitarem recursos do tesouro.\n\n- Criar um modelo claro de transição para passar o desenvolvimento à comunidade, acelerando a descentralização.  \n\n- Incentivar financiamento privado (ex.: VCs, parcerias) para reduzir dependência do tesouro e fomentar sustentabilidade.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
