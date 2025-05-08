@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Avaliação sobre a proposta: Amaru Node Development 2025\n\nHoje, toda a rede Cardano depende de um único tipo de software (node) para funcionar. Se esse software tiver um erro grave, a rede inteira pode parar — é como ter só uma fábrica produzindo energia para uma cidade inteira. Ter um segundo node alternativo é como instalar um gerador de reserva: mesmo que poucos o utilizem no início, ele garante segurança, independência e estabilidade para o futuro da rede.\n\nApoio esta proposta porque acredito que Cardano, para manter sua resiliência e reputação como uma blockchain verdadeiramente descentralizada, precisa fortalecer não apenas a produção de blocos, mas também a infraestrutura que os sustenta — especialmente a diversidade e robustez dos nodes.\n\nA proposta apresenta um plano bem estruturado para o desenvolvimento de um node alternativo para Cardano, escrito em Rust. Trata-se de um projeto estratégico de altíssima importância, pois a rede atualmente depende de uma única implementação em Haskell, o que representa um risco estrutural à sua continuidade e descentralização.\n\nMesmo que a adoção inicial do node alternativo possa ser limitada — como ocorre em outras blockchains — sua existência funcional e auditável já oferece valor crítico à infraestrutura. O escopo é ambicioso, mas conta com responsáveis tecnicamente reconhecidos, estrutura modular clara, mecanismos de governança via smart contract e relatórios públicos planejados.\n\nPontos positivos destacados:\n\nA proposta é conduzida por membros experientes com atuação comprovada em entidades respeitadas como TxPipe, Sundae Labs e Cardano Foundation.\n\nOs escopos são bem definidos e vinculados a responsáveis específicos.\n\nOs recursos serão liberados de forma trancheada, conforme a entrega de milestones, com governança on-chain.\n\nHá previsão de um budget de contingência com regras claras de uso e devolução ao tesouro, o que reforça a confiança no uso responsável dos recursos.\n\nRecomendações e ressalvas:\n\n1. Inclusão de KPIs objetivos e metas claras:\nA proposta carece de indicadores quantitativos de sucesso. Sugere-se incluir KPIs como:\n\n≥70% de cobertura de testes automatizados nos módulos principais;\nValidação ≥90% em testes formais de consenso;\n≥10 SPOs testando o node em testnets públicas;\n≥100 blocos forjados com sucesso até o final de 2025.\n\nEsses indicadores permitiriam avaliar, de forma transparente, não só a entrega técnica, mas também seu impacto prático.\n\n2. Plano de documentação e onboarding para adoção:\nEmbora haja menção a bounties e interação com operadores, não há clareza sobre materiais técnicos específicos para facilitar a operação do Amaru Node pelos SPOs. Sugere-se desenvolver um plano de documentação dedicado à adoção e à integração do node, ampliando as chances de uso efetivo e de feedback construtivo pela comunidade.\n\nConclusão\n\nA proposta representa um avanço técnico significativo e imprescindível para a segurança e descentralização de Cardano. Dado seu escopo crítico, a governança planejada e os mecanismos de accountability, o projeto justifica o orçamento solicitado.\nEndosso voto favorável, com as ressalvas acima encaminhadas como sugestões construtivas para fortalecer ainda mais a execução e a adoção do node."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
