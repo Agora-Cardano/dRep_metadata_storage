@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "Proposer has publicly stated that he will resubmit the proposal due to a small editing inconsistency, as can be seen in his tweet below. Because of this I vote no.\n\nLink https://x.com/ElderM/status/1920131131581530246\n\nFull text below.\n\n`Post Mortem on the Info Action Hash\n\nBrief recap:\nI submitted an info action requesting 50 million ADA to increase liquidity in the Cardano DeFi ecosystem. Almost all of the funds were to go into DeFi protocols, and not to pay any specific person or organization. After submitting, http://gov.tools showed that the document hash was correct while most other tools show it is incorrect.\n\nIt looks like there were two breakdowns in the process:\n1. I generated the info action file, and before submitting I looked it over and found that the URL link was too long and there was something to fix in the Rationale section. I regenerated the file and used the Github edit function, which inserted an extra character at the end of the file.\n2. Gov Tools has a guard rail to check the document at the link. When it does the check, it stripped the last character of the document, which showed a perfect match to the file they generated. Thus, on http://gov.tools the hash is showing it is valid.\n\nI have been talking to the Gov Tools team and they have raised an issue and will be putting a fix in. Unfortunately, I cannot just update the file on Github because I linked to the committed version of the file exactly to prevent this kind of situation (where the file could purposefully or accidentally be tampered with). I will have to resubmit.`"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
