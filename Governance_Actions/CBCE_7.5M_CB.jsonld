@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I do not support this governance action due to critical gaps in constitutional compliance and governance execution.\n\n1. Violation of Article IV.2 of the Cardano Constitution:\nThis budget Info Action fails to define any process for administering the ₳7.5M requested. No administrator, smart contract, multisig mechanism, or execution framework is mentioned — nor even an intention to define one. This directly violates the requirement that every budget must include a process for administering funds.\n\n2. No coordination across overlapping bundles:\nSeveral proposals in this action are also present in the 39-proposal Intersect info action bundle. Without any coordination or clarity on how overlapping proposals will be handled, there is a risk of duplicated withdrawals or conflicting execution paths.\n\n3. Retroactive application of threshold:\nThe 2.69B ADA voting threshold used to filter which proposals were included was not communicated clearly to dReps during the Ekklesia voting phase. Applying it retroactively undermines the legitimacy of the signaling process and introduces procedural unfairness.\n\n4. Weak quality of signaling:\nMany dReps either abstained or voted No without reviewing individual proposals. This resulted in high-visibility proposals dominating the outcome, while lesser-known contributors were excluded — not necessarily due to lack of merit, but lack of attention.\n\n5. All-or-nothing structure suppresses representation:\nThis budget is bundled. dReps are forced to accept or reject all included proposals, with no ability to make granular decisions. This limits representative governance and incentivizes strategic voting rather than thoughtful review.\n\nConclusion:\nWhile I support funding high-quality community-led proposals, this action does not meet the required standards for constitutional compliance, coordination, or transparent execution. I vote NO until these gaps are addressed."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
