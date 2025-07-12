@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "EN - GOVERNANCE ACTION REVIEW\n\nPositive Aspects\n\nCardano currently relies on a single Haskell-based node. Amaru addresses this structural risk\nby offering a second, independently maintained Rust-based implementation. Even if initially\nunderused, its presence enhances decentralization and fault tolerance.\nThe proposal is led by technically reputable contributors with clear roles and scope division.\nIt incorporates structured fund disbursement, audit trails, metadata (CIP-100), and fallback\nprocedures. Smart contracts are audited by MLabs and TxPipe. The fund will be governed by\na multisig/script system and overseen by PRAGMA.\n\nNegative Aspects\n\nDespite improved transparency, the proposal lacks quantitative KPIs. There are no defined\nKPIs such as test coverage percentage, SPO adoption, or blocks produced. This absence limits\naccountability and makes it harder to assess tangible progress.\nLikewise, documentation and onboarding for SPOs are not addressed. No integration guides\nor demo scenarios are included. For a critical infrastructure project, this weakens practical\nutility and ecosystem adoption. The scale of the request — ₳1.5 million — demands a higher\ndegree of clarity on expected outcomes. In the absence of success indicators, it becomes\ndifficult to justify the potential return on investment.\n\nPotential Impact\n\nThe proposal has long-term strategic value. It enhances network resilience, encourages\nmodular infrastructure, and showcases smart contract-based governance. However, setting a\nprecedent without KPIs could lower standards for future proposals and introduce\nreputational and treasury risks.\n\nComparisons with previous Amaru Info Action\n\nCompared to previous Amaru Info Action, this treasury withdrawal action improves budget\ncontrol and technical oversight. It builds on the Sundae Labs treasury model and adds\nfeatures like credential rotation. However, like many Catalyst-era proposals, it still lacks clear\nsuccess criteria and indicators (KPIs).\n\nVOTE RATIONALE\n\nAgora acknowledges the strategic relevance of the Amaru initiative and the improvements in\nfund management and transparency.\n\nIn the previous Amaru Budget Info Action, Agora supported the initiative with constructive\nrecommendations — including the introduction of quantitative KPIs and onboarding\nmaterials for SPOs. Unfortunately, these points were not addressed in the current governance\naction. This vote is recorded as abstain due to the absence of measurable KPIs and clear\nindication of what would be the onboarding documentation for SPOs.\n\nGiven that this Treasury Withdrawal involves the release of ₳1.5 million in funds, the lack of\nprogress on those aspects raises legitimate concerns about evaluability, delivery risk, and\nreturn on investment. Proposals of this scale require clear success criteria that can be\nindependently tracked and audited.\n\nThe abstention reflects a position of conditional support: acknowledging the initiative’s\ntechnical strengths while signaling the need for stronger outcome definition and clearer\naccountability mechanisms in future requests.\n\nCONCLUSION\n\nThis governance action addresses an important infrastructure gap in Cardano and brings\ntechnical credibility and transparency improvements. However, the lack of KPIs weakens the\nability to evaluate its real impact. Given the size of the request, more rigor in defining\noutcomes is warranted.\nFor this reason, Agora chooses to abstain — supporting the concept, but signaling that future\nproposals of this scope must meet higher standards of accountability\n\nPT/BR REVISÃO DE AÇÃO DE GOVERNANÇA\n\nASPECTOS POSITIVOS\n\nAtualmente, a Cardano depende de um único node baseado em Haskell. Amaru busca\nmitigar esse risco estrutural ao oferecer uma segunda implementação em Rust, mantida de\nforma independente. Mesmo que inicialmente subutilizado, sua presença reforça a\ndescentralização e a tolerância a falhas.\n\nA proposta é conduzida por contribuintes tecnicamente reconhecidos, com papéis e escopos\nclaramente definidos. Ela incorpora um desembolso estruturado dos fundos, trilhas de\nauditoria, metadados (CIP-100) e procedimentos de contingência. Os contratos inteligentes\nforam auditados pela MLabs e pela TxPipe. Os fundos serão geridos por um sistema\nmultisig/script supervisionado pela PRAGMA.\n\nASPECTOS NEGATIVOS\n\nApesar das melhorias em transparência, a proposta carece de KPIs quantitativos. Não há\nindicadores definidos como percentual de cobertura de testes, adoção por SPOs ou blocos\nproduzidos. Essa ausência limita a accountability e dificulta a avaliação de progresso tangível.\nDa mesma forma, a documentação e o onboarding para SPOs não são abordados. Não há\nguias de integração ou cenários demonstrativos incluídos. Para um projeto de infraestrutura\ncrítica, isso enfraquece a utilidade prática e a adoção no ecossistema.\n\nA escala da solicitação — ₳1,5 milhão — exige um nível mais alto de clareza sobre os\nresultados esperados. Na ausência de indicadores de sucesso, torna-se difícil justificar o\nretorno potencial sobre o investimento.\n\nPOTENCIAL DE IMPACTO\n\nA proposta tem valor estratégico de longo prazo. Ela fortalece a resiliência da rede, promove\numa infraestrutura modular e demonstra governança baseada em contratos inteligentes. No\nentanto, estabelecer um precedente sem KPIs pode reduzir os padrões para propostas futuras\ne introduzir riscos reputacionais e ao tesouro.\n\nCOMPARAÇÃO COM A INFO ACTION ANTERIOR DA AMARU\n\nComparada à Info Action anterior do Amaru, esta ação de retirada do tesouro melhora o\ncontrole orçamentário e a supervisão técnica. Ela se baseia no modelo de tesouraria da\nSundae Labs e adiciona funcionalidades como rotação de credenciais. No entanto, como\nmuitas propostas da era Catalyst, ainda carece de critérios e indicadores claros de sucesso\n(KPIs).\n\nJUSTIFICATIVA DO VOTO\n\nO Agora reconhece a relevância estratégica da iniciativa Amaru e as melhorias na gestão dos\nfundos e na transparência.\n\nNa Info Action orçamentária anterior do Amaru, o Agora apoiou a iniciativa com\nrecomendações construtivas — incluindo a introdução de KPIs quantitativos e materiais de\nonboarding para SPOs. Infelizmente, esses pontos não foram abordados na ação de\ngovernança atual. Este voto é registrado como abstenção, devido à ausência de KPIs\nmensuráveis e de uma indicação clara sobre qual seria a documentação de onboarding para\nSPOs.\n\nConsiderando que esta Retirada do Tesouro envolve a liberação de ₳1,5 milhão em fundos, a\nfalta de progresso nesses aspectos levanta preocupações legítimas quanto à possibilidade de\navaliação, ao risco de entrega e ao retorno sobre o investimento. Propostas desta magnitude\nexigem critérios de sucesso claros que possam ser acompanhados e auditados de forma\nindependente.\n\nA abstenção reflete uma posição de apoio condicional: reconhecendo os pontos fortes\ntécnicos da iniciativa, mas sinalizando a necessidade de uma definição mais robusta de\nresultados e de mecanismos mais claros de prestação de contas em futuras solicitações.\n\nCONCLUSÃO\n\nEsta ação de governança aborda uma lacuna importante na infraestrutura da Cardano e traz\nmelhorias em credibilidade técnica e transparência. No entanto, a ausência de KPIs\nenfraquece a capacidade de avaliar seu impacto real. Dado o tamanho do pedido, é\nnecessário maior rigor na definição dos resultados esperados.\n\nPor essa razão, o Agora opta por se abster — apoiando o conceito, mas sinalizando que\npropostas futuras com esse escopo devem atender a padrões mais elevados de accountability"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
